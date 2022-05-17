@@ -1,4 +1,5 @@
-package hw04lrucache //nolint:golint,stylecheck
+package hw04lrucache
+
 import (
 	"sync"
 )

@@ -1,4 +1,4 @@
-package hw04lrucache //nolint:golint,stylecheck
+package hw04lrucache
 
 type List interface {
 	Len() int
@@ -35,7 +35,7 @@ func (l *list) Back() *listItem {
 }
 
 func (l *list) PushFront(v interface{}) *listItem {
-	var item = listItem{
+	item := listItem{
 		value: v,
 		prev:  nil,
 	}
@@ -53,7 +53,7 @@ func (l *list) PushFront(v interface{}) *listItem {
 }
 
 func (l *list) PushBack(v interface{}) *listItem {
-	var item = listItem{
+	item := listItem{
 		value: v,
 		next:  nil,
 	}
